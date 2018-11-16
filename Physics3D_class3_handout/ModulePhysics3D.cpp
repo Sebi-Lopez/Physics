@@ -78,6 +78,8 @@ update_status ModulePhysics3D::PreUpdate(float dt)
 	// - If we have contacts, get both PhysBody3D from userpointers
 	// - If iterate all contact listeners and call them
 
+	p2List_item<PhysBody3D*>* iterator = phbody_list.getFirst(); 
+
 	return UPDATE_CONTINUE;
 }
 
